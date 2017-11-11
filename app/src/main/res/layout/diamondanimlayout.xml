@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="停止"
+            android:onClick="stopAnim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="开始"
+            android:onClick="startAnim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.twopai.diamondupanddownanimdemo.DiamondAnimLayout
+        android:id="@+id/diamondAnimLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:diamond_between_padding="30dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <com.twopai.diamondupanddownanimdemo.DiamondView
+                android:id="@+id/diamond1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:diamond_color="#FED144" />
+
+            <com.twopai.diamondupanddownanimdemo.DiamondShadowView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <com.twopai.diamondupanddownanimdemo.DiamondView
+                android:id="@+id/diamond2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:diamond_color="#88D851" />
+
+            <com.twopai.diamondupanddownanimdemo.DiamondShadowView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <com.twopai.diamondupanddownanimdemo.DiamondView
+                android:id="@+id/diamond3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:diamond_color="#3CC5F9" />
+
+            <com.twopai.diamondupanddownanimdemo.DiamondShadowView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <com.twopai.diamondupanddownanimdemo.DiamondView
+                android:id="@+id/diamond4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:diamond_color="#3DC4FB" />
+
+            <com.twopai.diamondupanddownanimdemo.DiamondShadowView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <com.twopai.diamondupanddownanimdemo.DiamondView
+                android:id="@+id/diamond5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:diamond_color="#049DE0" />
+
+            <com.twopai.diamondupanddownanimdemo.DiamondShadowView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <com.twopai.diamondupanddownanimdemo.DiamondView
+                android:id="@+id/diamond6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:diamond_color="#006D98" />
+
+            <com.twopai.diamondupanddownanimdemo.DiamondShadowView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.twopai.diamondupanddownanimdemo.DiamondAnimLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diamondAnimLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Loading..."
+        android:textSize="21sp"
+        android:textStyle="italic"
+        android:typeface="serif" />
+</RelativeLayout>

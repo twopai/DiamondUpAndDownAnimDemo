@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DiamondView">
+        <attr name="diamond_color" format="color"/>
+        <attr name="diamond_shadow_color" format="color"/>
+        <attr name="diamond_horizontal_size" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="DiamondShadowView">
+        <attr name="shadow_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="DiamondAnimLayout">
+        <attr name="diamond_between_padding" format="dimension"/>
+    </declare-styleable>
+</resources>
